@@ -1,14 +1,33 @@
-<a class="header__logo" href=""> <img src="" alt="logo" />&#128049; </a>
-<nav class="header-nav">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">How it’s made?</a></li>
-    <li><a href="#">Our products</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-<svg>
-  <use></use>
-</svg>
-<button class="header__button" type="button">Buy now</button>
+<section class="header">
+  <div class="container">
+    <a class="header__logo" href=""> <img src="" alt="logo" />&#128049; </a>
+    <nav>
+      <ul class="nav">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">About us</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <svg class="header__burger">
+      <use href="./images/icons.svg#icon-burger"></use>
+    </svg>
+    <button class="btn header__button" type="button">
+      Buy now
+      <svg class="btn__icon">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</section>
