@@ -17,6 +17,9 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--brand-color-secondary);
+  @media screen and (min-width: 480px){
+  margin-bottom: 15px;
+  }
 }
 .about__title {
   font-family: Titan One;
@@ -27,13 +30,27 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--brand-color);
+  @media screen and (min-width: 480px){
+    margin-bottom: 26px;
+    }
+}
+.about__image{
+  @media screen and (min-width: 480px){
+    margin-bottom: 46px;
+    }
 }
 .about__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   color: var(--text-color-thrd);
+  @media screen and (min-width: 480px){
+    margin-bottom: 30px;
+    }
 }
 .about__text--light-color {
   color: var(--text-color-scnd);
+  @media screen and (min-width: 480px){
+    margin-bottom: 20px;
+    }
 }
