@@ -1,25 +1,6 @@
 .hero {
   background-color: var(--bg-color-second);
 
-  padding-top: 193px;
-  padding-bottom: 160px;
-
-  &__background-picture {
-    position: absolute;
-    top: 92px;
-    right: 32px;
-
-    &::after {
-      position: absolute;
-
-      content: '';
-      width: 346px;
-      height: 344px;
-      background-color: var(--brand-color-secondary);
-      border-radius: 50%;
-    }
-  }
-
   &__title {
     font-family: Titan One;
     font-size: 26px;
@@ -84,4 +65,38 @@
 
 .container--hero {
   position: relative;
+  border: 1px solid black;
+
+  padding-top: 137px;
+  padding-bottom: 160px;
+}
+
+.wrapper__background-picture {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0%;
+
+  width: 100%;
+  border: 1px solid green;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+    content: '';
+    width: 346px;
+    height: 344px;
+    background-color: var(--brand-color-secondary);
+    border-radius: 50%;
+  }
+}
+
+.hero__background-picture {
+  position: relative;
+  z-index: 10;
+  left: 0;
+  top: 0;
 }
