@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --brand-color: #d41443;
   --inverse-color: #fea5bb;
@@ -30,3 +31,37 @@
   --color-slider-icon-active: #d9d9d9;
   --color-slider-icon-active: #d31342;
 }
+=======
+:root {
+  --brand-color: #d41443;
+  --inverse-color: #fea5bb;
+  --brand-color-secondary: #ffa5ba;
+
+  // bg colors
+  --bg-color-prime: #fff5f6;
+  --bg-color-second: #ffb8ca;
+  --bg-color-card-scnd: #f0d1a5;
+  --bg-color-card-thrd: #c2e297;
+  --bg-color-contacts: #fafafa;
+
+  // button colors
+  --bg-color-hover-btn: #c7133e;
+  --bg-color-hover-btn-second: #ecebeb;
+
+  // text colors, shadows
+  --text-color-primary: #fff;
+  --text-color-scnd: #907e82;
+  --text-color-thrd: #000000;
+  --card-shadows: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  // mobile menu
+  --mobile-menu-bg: #e17992;
+  --mobile-menu-stripes: #e18298;
+  --mobile-menu-shadow: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+  // icon's, dots, stripes colors
+  --color-element: #e1e1e1;
+  --color-slider-icon: #d9d9d9;
+  --color-slider-icon-active: #d31342;
+}
+>>>>>>> 4a48c22133d45ce634326a2c0a7e55e6f31067d3
