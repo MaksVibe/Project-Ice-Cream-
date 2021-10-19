@@ -1,0 +1,28 @@
+.about__subtitle {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brand-color-secondary);
+}
+.about__title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-color-thrd);
+}
+.about__text--light-color {
+  color: var(--text-color-scnd);
+}

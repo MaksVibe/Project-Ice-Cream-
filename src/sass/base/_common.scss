@@ -1,8 +1,13 @@
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: var(--brand-color);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.04em;
+}
+
+h1,
+h2 {
+  font-family: 'Titan One', sans-serif;
 }
