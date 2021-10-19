@@ -1,5 +1,6 @@
 .hero {
   background-color: var(--bg-color-second);
+  overflow: hidden;
 
   &__title {
     font-family: Titan One;
