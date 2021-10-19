@@ -3,5 +3,8 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+@import "./base/reset";
+@import "./base/common";
+@import "./base/containers";
+@import "./base/button";
+@import "./utils/vars";
