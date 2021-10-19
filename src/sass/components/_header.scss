@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffb8ca;
+  background-color: var(--bg-color-second);
 
   &__nav {
     display: none;
@@ -10,7 +10,7 @@
   display: none;
 }
 
-.container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;

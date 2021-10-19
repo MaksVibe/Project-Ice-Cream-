@@ -1,8 +1,24 @@
 .hero {
-  background-color: #ffb8ca;
+  background-color: var(--bg-color-second);
 
   padding-top: 193px;
   padding-bottom: 160px;
+
+  &__background-picture {
+    position: absolute;
+    top: 92px;
+    right: 32px;
+
+    &::after {
+      position: absolute;
+
+      content: '';
+      width: 346px;
+      height: 344px;
+      background-color: var(--brand-color-secondary);
+      border-radius: 50%;
+    }
+  }
 
   &__title {
     font-family: Titan One;
@@ -12,14 +28,14 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
+
     &--accent {
       font-family: Titan One;
       font-size: 48px;
       line-height: 1.04;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-
-      color: #d41443;
+      color: var(--brand-color);
     }
   }
 
@@ -38,6 +54,22 @@
       background-color: #d41443;
       border-radius: 20px;
       padding: 10px 15px;
+
+      &-accent {
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 1.25;
+        align-items: center;
+        text-align: center;
+
+        color: #d41443;
+
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 10px 15px;
+
+        margin-right: 8px;
+      }
     }
   }
 
@@ -48,4 +80,8 @@
   &__woman-eat {
     display: none;
   }
+}
+
+.container--hero {
+  position: relative;
 }

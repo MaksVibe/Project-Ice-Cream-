@@ -1,12 +1,12 @@
 <section class="hero">
-  <div class="container">
+  <div class="container container--hero">
     <div>
       <h1 class="hero__title">
         ice cream<br />
         made with<br /><span class="hero__title--accent">passion</span>
       </h1>
       <ul class="hero__list">
-        <li><a class="hero__list--btn" href="#">Products</a></li>
+        <li><a class="hero__list--btn-accent" href="#">Products</a></li>
         <li><a class="hero__list--btn" href="#">How it’s made?</a></li>
       </ul>
       <div class="hero__milk">
@@ -25,5 +25,30 @@
       </ul>
       <img src="#" alt="woman-eat-icecream" />
     </div>
+
+    <picture class="hero__background-picture"
+      ><source
+        srcset="
+          ./images/hero-header/ice-cream@1x-desktop.png 1x,
+          ./images/hero-header/ice-cream@2x-desktop.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/hero-header/ice-cream@1x-tablet.png 1x,
+          ./images/hero-header/ice-cream@2x-tablet.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/hero-header/ice-cream@1x-mobile.png 1x,
+          ./images/hero-header/ice-cream@2x-mobile.png 2x
+        "
+        media="(min-width:320px)"
+      />
+      <img src="./images/hero-header/ice-cream@1x-desktop.png" alt="icecream" />
+    </picture>
   </div>
 </section>
