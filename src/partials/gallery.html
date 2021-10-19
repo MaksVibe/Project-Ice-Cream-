@@ -1,5 +1,32 @@
 <section class="gallery">
-  <div class="container">
-    <img src="../src/images/gallery/pictures@1x-desktop.png" alt="" />
+  <div class="container gallery__container">
+    <picture class="products__img">
+      <source
+        srcset="
+          ./images/gallery/pictures@1x-desktop.png 1x,
+          ./images/gallery/pictures@2x-desktop.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/gallery/pictures@1x-tablet.png 1x,
+          ./images/gallery/pictures@2x-tablet.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/gallery/pictures@1x-mobile.png 1x,
+          ./images/gallery/pictures@2x-mobile.png 2x
+        "
+        media="(min-width:320px)"
+      />
+      <img
+        class="gallery__image"
+        src="./images/gallery/pictures@1x-desktop.png"
+        alt=""
+      />
+    </picture>
   </div>
 </section>
