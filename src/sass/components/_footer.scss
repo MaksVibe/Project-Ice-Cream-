@@ -1,0 +1,77 @@
+.footer__container {
+  padding: 0 20px 25px 20px;
+  background-color: #fff5f6;
+}
+
+.footer__subtitle {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  margin-left: 0;
+
+  color: #ffa5ba;
+}
+
+.footer__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-top: 17px;
+
+  color: #d41443;
+}
+
+.footer__networks {
+  margin-top: 43px;
+}
+
+.networks__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__link {
+  display: block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+
+  margin-top: 46px;
+
+  color: #d41443;
+}
+
+.footer__link--text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+
+  text-align: right;
+
+  color: #000000;
+}
+
+.footer__end {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+
+  margin-top: 65px;
+
+  color: #907e82;
+}
