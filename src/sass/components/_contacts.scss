@@ -11,7 +11,7 @@
 
   &__wrapper {
     width: 70%;
-
+    padding-bottom: 110px;
     @media screen and (min-width: 768px) {
       width: 100%;
     }
@@ -25,6 +25,13 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-bottom: 54px;
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
@@ -41,7 +48,6 @@
   }
 
   &__item {
-    margin-bottom: 20px;
     padding: 43px 20px;
 
     background-color: var(--bg-color-primary);
@@ -66,14 +72,6 @@
       padding-bottom: 62px;
       padding-left: 43px;
       padding-right: 43px;
-    }
-
-    &:last-child {
-      margin-bottom: 54px;
-
-      @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-      }
     }
   }
 

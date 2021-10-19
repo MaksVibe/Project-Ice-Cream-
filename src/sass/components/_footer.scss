@@ -43,16 +43,22 @@
 }
 
 .footer__networks {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 43px;
-  margin-right: -28px;
-  text-align: right;
+  gap: 28px;
+
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 25px;
+  }
 }
 
 .networks__icon {
   width: 32px;
   height: 32px;
-
-  margin-right: 28px;
 }
 
 .footer__link {
@@ -102,5 +108,5 @@
 }
 
 .footer__end::before {
-  content: '\00a9';
+  content: "\00a9";
 }

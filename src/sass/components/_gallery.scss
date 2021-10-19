@@ -4,6 +4,12 @@
     var(--bg-color-primary) 30%
   );
   padding-bottom: 80px;
+
+  &__container {
+    margin: 0;
+    padding: 0;
+  }
+
   &__image {
     object-fit: cover;
   }
