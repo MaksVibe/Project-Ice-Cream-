@@ -27,7 +27,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--text-color-primary);
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
@@ -74,8 +74,8 @@
       line-height: 1.25;
       align-items: center;
       text-align: center;
-      color: #d41443;
-      background-color: #ffffff;
+      color: var(--brand-color);
+      background-color: var(--text-color-primary);
       border-radius: 20px;
       padding: 10px 15px;
 
@@ -83,7 +83,7 @@
 
       &:hover,
       &:focus {
-        background-color: #ecebeb;
+        background-color: var(--bg-color-card-scnd);
       }
 
       @media screen and (min-width: 1280px) {
@@ -96,8 +96,8 @@
         line-height: 1.25;
         align-items: center;
         text-align: center;
-        color: #ffffff;
-        background-color: #d41443;
+        color: var(--text-color-primary);
+        background-color: var(--brand-color);
         border-radius: 20px;
         padding: 10px 15px;
         margin-right: 8px;
@@ -106,7 +106,7 @@
 
         &:hover,
         &:focus {
-          background-color: #c7133e;
+          background-color: var(--bg-color-hover-btn);
         }
 
         @media screen and (min-width: 1280px) {
@@ -137,7 +137,7 @@
       font-family: DM Sans;
       font-size: 8px;
       line-height: 1.5;
-      color: #ffffff;
+      color: var(--text-color-primary);
 
       margin-bottom: 12px;
 
@@ -150,9 +150,9 @@
       }
     }
     &--btn {
-      color: #d41443;
+      color: var(--brand-color);
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: var(--text-color-primary);
       width: 18px;
       height: 18px;
       margin-bottom: 6px;
@@ -193,7 +193,7 @@
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: var(--brand-color);
 
     @media screen and (min-width: 1280px) {
       font-size: 46px;
@@ -211,7 +211,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--text-color-primary);
 
     @media screen and (min-width: 1280px) {
       right: -15px;
@@ -226,7 +226,7 @@
     font-size: 8px;
     line-height: 1.25;
     text-align: right;
-    color: #ffffff;
+    color: var(--text-color-primary);
 
     @media screen and (min-width: 1280px) {
       font-size: 14px;
