@@ -13,6 +13,7 @@
       // display: flex;
 
       margin-top: 15px;
+      margin-bottom: 25px;
     }
   }
 
@@ -47,7 +48,7 @@
 
   &__list {
     display: flex;
-
+    margin-bottom: 19px;
     &--btn {
       font-family: DM Sans;
       font-size: 8px;
@@ -163,6 +164,10 @@
 
     color: #ffffff;
   }
+
+  &--photo {
+    z-index: 20;
+  }
 }
 
 .container--hero {
@@ -177,6 +182,7 @@
   }
 }
 
+// Мороженко
 .wrapper__background-picture {
   position: absolute;
   z-index: 5;
@@ -184,10 +190,6 @@
   width: 100%;
   top: 36px;
 
-  @media screen and (min-width: 768px) {
-    left: 307px;
-    display: none;
-  }
   &::after {
     position: absolute;
     right: -25%;
@@ -198,6 +200,12 @@
     height: 344px;
     background-color: var(--brand-color-secondary);
     border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+      width: 324px;
+      height: 324px;
+      left: 307px;
+    }
   }
 }
 
@@ -206,4 +214,9 @@
   z-index: 10;
   right: 10%;
   top: 0;
+
+  @media screen and (min-width: 768px) {
+    right: 247px;
+    top: 20px;
+  }
 }
