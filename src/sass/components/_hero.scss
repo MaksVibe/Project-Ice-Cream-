@@ -15,6 +15,10 @@
       margin-top: 15px;
       margin-bottom: 25px;
     }
+    @media screen and (min-width: 1280px) {
+      margin-top: 84px;
+      margin-bottom: 45px;
+    }
   }
 
   &__title {
@@ -31,6 +35,11 @@
       line-height: 1.13;
     }
 
+    @media screen and (min-width: 1280px) {
+      font-size: 38px;
+      line-height: 1.15;
+    }
+
     &--accent {
       font-family: Titan One;
       font-size: 48px;
@@ -42,6 +51,11 @@
       @media screen and (min-width: 768px) {
         font-size: 22px;
         line-height: 1.13;
+      }
+
+      @media screen and (min-width: 1280px) {
+        font-size: 38px;
+        line-height: 1.15;
       }
     }
   }
@@ -55,27 +69,31 @@
       line-height: 1.25;
       align-items: center;
       text-align: center;
-
-      color: #ffffff;
-
-      background-color: #d41443;
+      color: #d41443;
+      background-color: #ffffff;
       border-radius: 20px;
       padding: 10px 15px;
 
+      @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.28;
+      }
       &-accent {
         font-family: DM Sans;
         font-size: 8px;
         line-height: 1.25;
         align-items: center;
         text-align: center;
-
-        color: #d41443;
-
-        background-color: #ffffff;
+        color: #ffffff;
+        background-color: #d41443;
         border-radius: 20px;
         padding: 10px 15px;
-
         margin-right: 8px;
+
+        @media screen and (min-width: 1280px) {
+          font-size: 14px;
+          line-height: 1.28;
+        }
       }
     }
   }
@@ -103,6 +121,14 @@
       color: #ffffff;
 
       margin-bottom: 12px;
+
+      @media screen and (min-width: 1280px) {
+        width: 200px;
+        height: 78px;
+
+        font-size: 14px;
+        line-height: 1.28;
+      }
     }
     &--btn {
       color: #d41443;
@@ -111,6 +137,11 @@
       width: 18px;
       height: 18px;
       margin-bottom: 6px;
+
+      @media screen and (min-width: 1280px) {
+        width: 26px;
+        height: 26px;
+      }
     }
   }
 }
@@ -180,6 +211,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    padding: 0 115px;
+    width: 100%;
+  }
 }
 
 // Мороженко
@@ -189,6 +226,9 @@
   left: 0;
   width: 100%;
   top: 36px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 
   &::after {
     position: absolute;

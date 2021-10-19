@@ -1,6 +1,10 @@
 .header {
   background-color: var(--bg-color-second);
 
+  &__logo {
+    margin-left: -70px;
+  }
+
   &__nav {
     display: none;
 
