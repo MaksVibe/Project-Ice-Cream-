@@ -1,10 +1,14 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
 @import "./base/reset";
 @import "./base/common";
+@import "./utils/vars";
 @import "./base/containers";
 @import "./base/button";
-@import "./utils/vars";
+@import "./components/about";
+@import "./components/advantages";
+@import "./components/contacts";
+@import "./components/footer";
+@import "./components/gallery";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/products";
+@import "./components/reviews";
