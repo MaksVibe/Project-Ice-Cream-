@@ -155,6 +155,9 @@
     margin-top: 15px;
   }
 
+  @media screen and (min-width: 1280px) {
+    margin-top: 74px;
+  }
   // &--indent {
   //   margin-bottom: 72px;
   // }
@@ -172,6 +175,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
   }
 
   &--decorate {
@@ -185,6 +193,13 @@
     height: 16px;
     border-radius: 50%;
     background-color: white;
+
+    @media screen and (min-width: 1280px) {
+      right: -15px;
+
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &--text {
@@ -192,8 +207,12 @@
     font-size: 8px;
     line-height: 1.25;
     text-align: right;
-
     color: #ffffff;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.28;
+    }
   }
 
   &--photo {
@@ -226,8 +245,9 @@
   left: 0;
   width: 100%;
   top: 36px;
+
   @media screen and (min-width: 1280px) {
-    display: none;
+    // display: none;
   }
 
   &::after {
@@ -242,9 +262,17 @@
     border-radius: 50%;
 
     @media screen and (min-width: 768px) {
+      left: 307px;
+
       width: 324px;
       height: 324px;
-      left: 307px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 30px;
+      left: 760px;
+
+      width: 538px;
+      height: 538px;
     }
   }
 }
@@ -258,5 +286,7 @@
   @media screen and (min-width: 768px) {
     right: 247px;
     top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
   }
 }
