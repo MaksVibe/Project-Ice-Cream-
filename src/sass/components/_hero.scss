@@ -1,8 +1,28 @@
 .hero {
-  background-color: var(--bg-color-second);
+  background-color: #ffb8ca;
 
   padding-top: 193px;
   padding-bottom: 160px;
+
+  &__title {
+    font-family: Titan One;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    &--accent {
+      font-family: Titan One;
+      font-size: 48px;
+      line-height: 1.04;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: #d41443;
+    }
+  }
+
   &__list {
     display: flex;
 
@@ -17,26 +37,7 @@
 
       background-color: #d41443;
       border-radius: 20px;
-    }
-  }
-
-  &__title {
-    font-family: Titan One;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-
-    &--accent {
-      font-family: Titan One;
-      font-size: 48px;
-      line-height: 1.04;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-
-      color: #d41443;
+      padding: 10px 15px;
     }
   }
 
