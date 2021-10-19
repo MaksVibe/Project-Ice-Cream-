@@ -10,8 +10,26 @@
         <li><a class="hero__list--btn" href="#">How it’s made?</a></li>
       </ul>
       <div class="hero__milk">
-        <img src="#" alt="milk" />
-        <p>
+        <picture
+          ><source
+            srcset="
+              ./images/hero-header/milk@1x-desktop.png 1x,
+              ./images/hero-header/milk@2x-desktop.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/milk@1x-tablet.png 1x,
+              ./images/hero-header/milk@2x-tablet.png 2x
+            "
+            media="(min-width:768px)"
+          />
+
+          <img src="./images/hero-header/milk@1x-tablet.png" alt="milk" />
+        </picture>
+
+        <p class="hero__milk--paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
@@ -23,7 +41,24 @@
         <li><span>16</span>cafes</li>
         <li><span>16</span>food trucks</li>
       </ul>
-      <img src="#" alt="woman-eat-icecream" />
+      <picture
+        ><source
+          srcset="
+            ./images/hero-header/girl@1x-desktop.png 1x,
+            ./images/hero-header/girl@2x-desktop.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/girl@1x-tablet.png 1x,
+            ./images/hero-header/girl@2x-tablet.png 2x
+          "
+          media="(min-width:768px)"
+        />
+
+        <img src="./images/hero-header/milk@1x-tablet.png" alt="woman-eat-icecream" />
+      </picture>
     </div>
 
     <div class="wrapper__background-picture">

@@ -14,8 +14,8 @@
 
     background-color: #ffffff;
     border-radius: 22px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     padding-left: 40px;
     padding-right: 36px;
 
@@ -27,11 +27,11 @@
     font-weight: bold;
 
     color: #d41443;
-  }
-}
 
-.btn__icon {
-  fill: #d41443;
+    &--span {
+      margin-left: 12px;
+    }
+  }
 }
 
 .header__mobile {
