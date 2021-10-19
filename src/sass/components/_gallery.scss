@@ -1,10 +1,10 @@
 .gallery {
+  background-image: linear-gradient(
+    var(--bg-color-prime) 30%,
+    var(--bg-color-primary) 30%
+  );
   padding-bottom: 80px;
-  &__container {
-    padding: 0;
-    margin: 0;
-  }
   &__image {
-    background: linear-gradient(var(--bg-color-prime), var(--bg-color-primary));
+    object-fit: cover;
   }
 }
