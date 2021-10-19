@@ -53,7 +53,11 @@
       }
     }
   }
-
+  &__wrapper {
+    position: absolute;
+    z-index: 11;
+    top: 137px;
+  }
   &__milk {
     display: none;
   }
@@ -66,9 +70,7 @@
 .container--hero {
   position: relative;
   border: 1px solid black;
-
-  padding-top: 137px;
-  padding-bottom: 160px;
+  height: 450px;
 }
 
 .wrapper__background-picture {
@@ -79,13 +81,13 @@
 
   width: 100%;
   border: 1px solid green;
+  top: 36px;
 
   &::after {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 36px;
+    top: -9px;
     z-index: 3;
-
     content: '';
     width: 346px;
     height: 344px;
@@ -95,8 +97,9 @@
 }
 
 .hero__background-picture {
-  position: relative;
+  position: absolute;
   z-index: 10;
-  left: 0;
+  right: 10%;
   top: 0;
+  border: 1px solid red;
 }
