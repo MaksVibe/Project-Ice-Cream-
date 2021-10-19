@@ -1,29 +1,102 @@
 <section class="hero">
-  <div class="container">
-    <div>
+  <div class="container container--hero">
+    <div class="hero__wrapper">
       <h1 class="hero__title">
         ice cream<br />
         made with<br /><span class="hero__title--accent">passion</span>
       </h1>
       <ul class="hero__list">
-        <li><a class="hero__list--btn" href="#">Products</a></li>
+        <li><a class="hero__list--btn-accent" href="#">Products</a></li>
         <li><a class="hero__list--btn" href="#">How it’s made?</a></li>
       </ul>
       <div class="hero__milk">
-        <img src="#" alt="milk" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
-        </p>
-        <a href="">&#129046;</a>
+        <picture
+          ><source
+            srcset="
+              ./images/hero-header/milk@1x-desktop.png 1x,
+              ./images/hero-header/milk@2x-desktop.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/milk@1x-tablet.png 1x,
+              ./images/hero-header/milk@2x-tablet.png 2x
+            "
+            media="(min-width:768px)"
+          />
+
+          <img src="./images/hero-header/milk@1x-tablet.png" alt="milk" />
+        </picture>
+
+        <div class="hero__milk--wrapper">
+          <p class="hero__milk--paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero__milk--btn" type="button">&#129046;</button>
+        </div>
       </div>
     </div>
     <div class="hero__woman-eat">
-      <ul>
-        <li><span>16</span>cafes</li>
-        <li><span>16</span>food trucks</li>
+      <ul class="hero__woman-eat--indent">
+        <li class="hero__woman-eat--wrapper">
+          <h3 class="hero__woman-eat--number">16</h3>
+          <span class="hero__woman-eat--decorate"></span>
+          <p class="hero__woman-eat--text">cafes</p>
+        </li>
+        <li class="hero__woman-eat--wrapper">
+          <h3 class="hero__woman-eat--number">23</h3>
+          <span class="hero__woman-eat--decorate"></span>
+          <p class="hero__woman-eat--text">food trucks</p>
+        </li>
       </ul>
-      <img src="#" alt="woman-eat-icecream" />
+      <picture class="hero__woman-eat--photo"
+        ><source
+          srcset="
+            ./images/hero-header/girl@1x-desktop.png 1x,
+            ./images/hero-header/girl@2x-desktop.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/girl@1x-tablet.png 1x,
+            ./images/hero-header/girl@2x-tablet.png 2x
+          "
+          media="(min-width:768px)"
+        />
+
+        <img src="./images/hero-header/milk@1x-tablet.png" alt="woman-eat-icecream" />
+      </picture>
+    </div>
+
+    <!-- Мороженко -->
+    <div class="wrapper__background-picture">
+      <picture class="hero__background-picture"
+        ><source
+          srcset="
+            ./images/hero-header/ice-cream@1x-desktop.png 1x,
+            ./images/hero-header/ice-cream@2x-desktop.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/ice-cream@1x-tablet.png 1x,
+            ./images/hero-header/ice-cream@2x-tablet.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/ice-cream@1x-mobile.png 1x,
+            ./images/hero-header/ice-cream@2x-mobile.png 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img src="./images/hero-header/ice-cream@1x-desktop.png" alt="icecream" />
+      </picture>
     </div>
   </div>
 </section>
