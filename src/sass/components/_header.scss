@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--bg-color-second);
+
+  &__nav {
+    display: none;
+  }
+}
+
+.header__button {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
