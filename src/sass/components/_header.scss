@@ -2,7 +2,9 @@
   background-color: var(--bg-color-second);
 
   &__logo {
-    margin-left: -70px;
+    @media screen and (min-width: 1280px) {
+      margin-left: -70px;
+    }
   }
 
   &__nav {
@@ -86,6 +88,13 @@
     font-weight: bold;
 
     color: #d41443;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
 
     &--span {
       margin-left: 12px;
