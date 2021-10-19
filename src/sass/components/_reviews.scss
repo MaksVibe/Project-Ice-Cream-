@@ -4,6 +4,7 @@
   margin: 0 auto;
 }
 .comment-wrapper {
+  margin: 0 auto;
   margin-top: 30px;
   background-color: #fafafa;
   padding-top: 30px;
@@ -12,6 +13,13 @@
   padding-left: 50px;
   text-align: center;
   position: relative;
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 930px;
+  }
 }
 
 .reviews__icon {
@@ -19,6 +27,12 @@
   top: -20px;
   left: 15px;
   z-index: 5;
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: -18px;
+  }
 }
 .reviews__text {
   font-weight: 500;
@@ -27,14 +41,18 @@
 
   color: #000000;
   padding: 0 18px;
-  background-image: repeating-linear-gradient(
-    to top,
-    #e1e1e1 0px 1px,
-    transparent 1px 31px
-  );
+  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
   text-align: center;
   position: relative;
   z-index: 10;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(30 / 14);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .reviews-text-container {
@@ -46,11 +64,20 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .reviews__mark {
   display: block;
-  content: "";
+  content: '';
   height: 4px;
   width: 4px;
   background: #c7133e;
@@ -61,21 +88,26 @@
 }
 
 .reviews__city {
-  padding-top: 18px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 186%;
+  line-height: calc(30 / 14);
   text-align: center;
 
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: calc(38 / 20);
+  }
 }
 .slick-dots li button:before {
-  //   width: 12px;
-  //   height: 12px;
   font-size: 12px;
 }
 .slick-dots li.slick-active button:before {
-  content: "";
+  content: '';
   background-image: url(../images/customer-reviews/house.svg);
   fill: #d31342;
   background-repeat: no-repeat;
