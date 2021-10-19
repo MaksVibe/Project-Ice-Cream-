@@ -1,4 +1,5 @@
 .reviews__image {
+  max-width: 85px;
   display: block;
   margin: 0 auto;
 }
@@ -26,7 +27,11 @@
 
   color: #000000;
   padding: 0 18px;
-  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1 0px 1px,
+    transparent 1px 31px
+  );
   text-align: center;
   position: relative;
   z-index: 10;
@@ -45,7 +50,7 @@
 
 .reviews__mark {
   display: block;
-  content: '';
+  content: "";
   height: 4px;
   width: 4px;
   background: #c7133e;
@@ -70,7 +75,7 @@
   font-size: 12px;
 }
 .slick-dots li.slick-active button:before {
-  content: '';
+  content: "";
   background-image: url(../images/customer-reviews/house.svg);
   fill: #d31342;
   background-repeat: no-repeat;
