@@ -65,6 +65,7 @@
   &__content{
     @media screen and (min-width: 768px) {
 display: flex;
+align-items: center;
     }
   }
   &__image {
