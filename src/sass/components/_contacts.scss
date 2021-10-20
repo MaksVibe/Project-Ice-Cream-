@@ -1,11 +1,14 @@
 .contacts {
+  margin: 0 auto;
   background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%);
 
   @media screen and (min-width: 768px) {
+    max-width: 768px;
     background-image: linear-gradient(to bottom, #ffffff 12%, #fff5f6 12%);
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 1280px;
     background-image: linear-gradient(to bottom, #ffffff 14%, #fff5f6 14%);
   }
 
@@ -34,6 +37,7 @@
     padding-bottom: 54px;
     @media screen and (min-width: 768px) {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       margin-top: -20px;
       margin-left: -20px;
