@@ -8,10 +8,13 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    @media (min-device-pixel-ratio: 2),
+    @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/about/sectionbg@2x-mobile.png);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      background-image: none;
     }
   }
 
@@ -19,12 +22,20 @@
     font-family: Titan One;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.17;
+    line-height: 1.15;
     text-align: center;
     text-transform: uppercase;
     color: var(--brand-color-secondary);
     @media screen and (min-width: 320px) {
       margin-bottom: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.17;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
     }
   }
 
@@ -40,10 +51,33 @@
     @media screen and (min-width: 320px) {
       margin-bottom: 26px;
     }
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 1.14;
+      margin-bottom: 55px;
+    }
+  }
+  &__content{
+    @media screen and (min-width: 768px) {
+display: flex;
+align-items: center;
+    }
   }
   &__image {
     @media screen and (min-width: 320px) {
       margin-bottom: 46px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 17px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 74px;
     }
   }
 
@@ -65,10 +99,24 @@
     @media screen and (min-width: 320px) {
       margin-bottom: 30px;
     }
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
     &--light-color {
       color: var(--text-color-scnd);
       @media screen and (min-width: 320px) {
         margin-bottom: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 62px;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 45px;
       }
     }
   }
@@ -79,8 +127,6 @@
     width: 176px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 37px;
-    padding-right: 37px;
     border-radius: 22px;
 
     font-weight: 700;
@@ -89,6 +135,11 @@
 
     color: var(--brand-color);
     background-color: var(--bg-color-primary);
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(21 / 16);
+    }
+
     &:hover,
     &:focus {
       background-color: var(--bg-color-hover-btn-second);

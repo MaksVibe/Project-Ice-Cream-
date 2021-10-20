@@ -2,6 +2,10 @@
   background-color: var(--bg-color-second);
   overflow: hidden;
 
+  @media screen and (min-width: 768px) {
+    overflow: visible;
+  }
+
   &__wrapper {
     position: absolute;
     z-index: 11;
@@ -13,11 +17,11 @@
       // display: flex;
 
       margin-top: 15px;
-      margin-bottom: 25px;
+      margin-bottom: 38px;
     }
     @media screen and (min-width: 1280px) {
       margin-top: 84px;
-      margin-bottom: 45px;
+      margin-bottom: 33px;
     }
   }
 
@@ -207,7 +211,7 @@
     top: 0;
     z-index: -1;
 
-    content: "";
+    // content: "";
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -244,7 +248,7 @@
 
   height: 450px;
   @media screen and (min-width: 768px) {
-    position: static;
+    // position: static;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -274,7 +278,7 @@
     right: -20%;
     top: -10px;
     z-index: 3;
-    content: "";
+    content: '';
     width: 346px;
     height: 344px;
     background-color: var(--brand-color-secondary);
@@ -282,12 +286,13 @@
 
     @media screen and (min-width: 768px) {
       left: 307px;
+      top: -92px;
 
       width: 324px;
       height: 324px;
     }
     @media screen and (min-width: 1280px) {
-      top: 30px;
+      top: -50px;
       left: 470px;
 
       width: 538px;
@@ -304,10 +309,10 @@
 
   @media screen and (min-width: 768px) {
     right: 247px;
-    top: 20px;
+    top: -60px;
   }
   @media screen and (min-width: 1280px) {
     right: 440px;
-    top: 110px;
+    top: 0;
   }
 }
