@@ -1,13 +1,25 @@
 .gallery {
-  background-image: linear-gradient(
-    var(--bg-color-prime) 30%,
-    var(--bg-color-primary) 30%
-  );
   padding-bottom: 80px;
 
   &__container {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    background-image: linear-gradient(
+      var(--bg-color-prime) 30%,
+      var(--bg-color-primary) 30%
+    );
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+        var(--bg-color-prime) 31%,
+        var(--bg-color-primary) 31%
+      );
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(
+        var(--bg-color-prime) 34%,
+        var(--bg-color-primary) 34%
+      );
+    }
   }
 
   &__image {
