@@ -1,21 +1,32 @@
 .about {
+  background-color: var(--bg-color-prime);
+  background-image: url("../images/about/sectionbg@1x-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 88%;
+  background-size: contain;
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/about/sectionbg@2x-mobile.png");
+  }
+  @media screen and (min-width: 1280px) {
+    background-position: center 107%;
+    background-image: url("../images/about/sectionbg@1x-desktop.png");
+  }
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/about/sectionbg@2x-desktop.png");
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
   &__container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 125px;
     padding-bottom: 40px;
-    background-color: var(--bg-color-prime);
-    background-image: url(../images/about/sectionbg@1x-mobile.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/sectionbg@2x-mobile.png);
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      background-image: none;
-    }
   }
 
   &__subtitle {
@@ -62,27 +73,30 @@
       margin-bottom: 55px;
     }
   }
-  &__content{
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media screen and (min-width: 768px) {
-display: flex;
-align-items: center;
+      flex-direction: row;
+      align-items: start;
     }
   }
   &__image {
-    @media screen and (min-width: 320px) {
-      margin-bottom: 46px;
-    }
+    max-width: 280px;
+    margin-bottom: 46px;
     @media screen and (min-width: 768px) {
       margin-right: 17px;
       margin-bottom: 0;
+      max-width: 340px;
     }
     @media screen and (min-width: 1280px) {
       margin-right: 74px;
+      max-width: 516px;
     }
   }
 
   &__description--text {
-    margin: 0 auto;
     max-width: 220px;
     @media screen and (min-width: 768px) {
       max-width: 340px;
@@ -102,6 +116,7 @@ align-items: center;
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.76;
+      margin-top: 50px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
@@ -124,15 +139,14 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: 176px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 38px;
     border-radius: 22px;
 
     font-weight: 700;
     font-size: 14px;
     line-height: calc(18 / 14);
 
+    transition: var(--transform-bg);
     color: var(--brand-color);
     background-color: var(--bg-color-primary);
     @media screen and (min-width: 768px) {

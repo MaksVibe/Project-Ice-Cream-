@@ -3,12 +3,10 @@
   background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%);
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     background-image: linear-gradient(to bottom, #ffffff 12%, #fff5f6 12%);
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
     background-image: linear-gradient(to bottom, #ffffff 14%, #fff5f6 14%);
   }
 
@@ -18,7 +16,7 @@
 
     @media screen and (min-width: 768px) {
       width: 100%;
-      padding-bottom: 160px;
+      padding-bottom: 165px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -26,8 +24,13 @@
 
       background-image: url(./../images/contacts/sectionbg2@1x-desktop.png);
       background-repeat: no-repeat;
-      background-position: 20% 33%;
+      background-position: 20% 22%;
       background-size: contain;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./../images/contacts/sectionbg2@2x-desktop.png);
+      }
     }
   }
 
@@ -35,28 +38,23 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
 
     padding-bottom: 54px;
     @media screen and (min-width: 768px) {
-      display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-top: -20px;
-      margin-left: -20px;
-      margin-bottom: 81px;
+      margin-bottom: 80px;
+      padding-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
-      margin-top: -30px;
-      margin-left: -30px;
+      gap: 30px;
       margin-bottom: 86px;
     }
   }
 
   &__item {
-    padding: 43px 20px;
+    padding: 44px 20px;
 
     background-color: var(--bg-color-primary);
     box-shadow: var(--card-shadows);
@@ -64,19 +62,13 @@
 
     @media screen and (min-width: 768px) {
       max-width: 220px;
-      margin-bottom: 0;
       margin-top: 20px;
-      margin-left: 20px;
-      flex-basis: calc((100%-60px) / 3);
-      padding: 50px 31px;
+      padding: 50px 30px;
     }
 
     @media screen and (min-width: 1280px) {
       max-width: 330px;
-      margin-top: 30px;
-      margin-left: 30px;
-      flex-basis: calc((100%-90px) / 3);
-      padding-top: 51px;
+      padding-top: 50px;
       padding-bottom: 62px;
       padding-left: 43px;
       padding-right: 43px;
@@ -227,7 +219,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 161px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 22px;
@@ -238,18 +229,22 @@
 
     &--dark {
       margin-bottom: 10px;
+      padding-left: 17px;
+      padding-right: 17px;
+      transition: var(--transform-bg);
 
       background-color: var(--color-slider-icon-active);
       color: var(--text-color-primary);
 
       @media screen and (min-width: 768px) {
-        min-width: 190px;
         margin-bottom: 0;
         margin-right: 15px;
+        padding-left: 30px;
+        padding-right: 35px;
       }
 
       @media screen and (min-width: 1280px) {
-        min-width: 200px;
+        padding-left: 35px;
       }
 
       &:hover,
@@ -259,15 +254,21 @@
     }
 
     &--light {
+      padding-left: 32px;
+      padding-right: 32px;
+      transition: var(--transform-bg);
+
       background-color: var(--bg-color-primary);
       color: var(--brand-color);
 
       @media screen and (min-width: 768px) {
-        min-width: 175px;
+        padding-left: 38px;
+        padding-right: 38px;
       }
 
       @media screen and (min-width: 1280px) {
-        min-width: 180px;
+        padding-left: 40px;
+        padding-right: 40px;
       }
 
       &:hover,
@@ -281,14 +282,9 @@
     margin-left: 8px;
     width: 10px;
     height: 10px;
-    stroke: var(--text-color-primary);
 
     @media screen and (min-width: 768px) {
       margin-left: 13px;
-    }
-
-    &--dark {
-      stroke: var(--brand-color);
     }
   }
 }
