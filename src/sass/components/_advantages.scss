@@ -1,38 +1,56 @@
-.advantages__container{
-    padding-bottom: 100px;
-    background-color: var(--bg-color-prime);
+.advantages__container {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background-color: var(--bg-color-prime);
 }
-.advantages__item{
-    &:not(:last-child) {
-        margin-bottom: 38px;
+
+.advantages__list {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
-&::before {
+
+.advantages__item {
+  max-width: 230px;
+  @media screen and (min-width: 768px) {
+    max-width: 180px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 330px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+  &::before {
     display: block;
-    content: '';
+    content: "";
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
     margin-bottom: 16px;
-}
-&:nth-child(1){
-    &::before {
-        background-image: url("../images/advantages/icon1@1x.png");
-      }
   }
-&:nth-child(2){
+  &:nth-child(1) {
     &::before {
-        background-image: url("../images/advantages/icon2@1x.png");
-      }
+      background-image: url("../images/advantages/icon1@1x.png");
+    }
   }
-  &:nth-child(3){
+  &:nth-child(2) {
     &::before {
-        background-image: url("../images/advantages/icon3@1x.png");
-      }
+      background-image: url("../images/advantages/icon2@1x.png");
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      background-image: url("../images/advantages/icon3@1x.png");
+    }
   }
 }
 
 .advantages__subtext {
-    display: block;
+  display: block;
   font-family: Titan One;
   font-weight: 400;
   font-size: 36px;
@@ -41,12 +59,27 @@
   text-transform: uppercase;
   color: var(--brand-color);
   margin-bottom: 18px;
-}
 
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
 
 .advantages__text {
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: calc(20 / 12);
   color: var(--text-color-thrd);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
 }
