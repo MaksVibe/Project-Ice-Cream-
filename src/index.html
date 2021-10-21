@@ -24,11 +24,13 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="./images/logo/favicon.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/png" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
@@ -48,7 +50,6 @@
       <include src="./partials/footer.html"></include>
     </footer>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -62,7 +63,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      $(".reviews__slider").slick({
+      $('.reviews__slider').slick({
         arrows: false,
         dots: true,
       });
@@ -75,5 +76,7 @@
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/modal-about.js"></script>
+    <script src="./index.js"></script>
+
   </body>
 </html>

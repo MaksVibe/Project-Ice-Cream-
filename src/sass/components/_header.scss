@@ -1,6 +1,13 @@
 .header {
   background-color: var(--bg-color-second);
 
+  padding: 6px 20px 0 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+  }
   &__logo {
     @media screen and (min-width: 1280px) {
       margin-left: -70px;
@@ -29,18 +36,12 @@
   justify-content: space-between;
   margin: 0 auto;
 
-  padding: 6px 20px 0 20px;
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 38px 34px 0 34px;
   }
   @media screen and (min-width: 1280px) {
     margin: 0 auto;
-    padding: 0 115px;
-    max-width: 1280px;
-
-    padding-top: 37px;
+    max-width: 1050px;
   }
 }
 
@@ -85,8 +86,8 @@
 
     background-color: var(--text-color-primary);
     border-radius: 50px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 40px;
     padding-right: 36px;
 
