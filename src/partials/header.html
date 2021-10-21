@@ -80,4 +80,56 @@
       </ul>
     </div>
   </div>
+  <!-- Modal window -->
+  <!-- Window -->
+  <div class="backdrop-buy visually-hidden" data-backdrop>
+        <div class="modal">
+          <button type="button" class="modal__btn" data-close-btn>
+          </button>
+          <p class="modal__title">Leave your contacts, we'll call you imidiatly</p>
+          <div class="form">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__field" type="text" name="name" id="name" />
+          </div>
+          <div class="form">
+            <label class="form__label" for="phone">Phone number</label>
+            <input class="form__field" type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form">
+            <label class="form__label" for="mail">E-mail</label>
+            <input class="form__field" type="email" name="e-mail" id="mail" />
+          </div>
+          <div class="form">
+            <label for="input-text" class="form__label">
+              Comment your order
+            </label>
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Add comment ..."
+              class="form__field form__text"
+              id="input-text"
+            ></textarea>
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              class="check__box visually-hidden"
+              name="policy"
+              id="policy"
+            />
+            <label for="policy" class="check__text">
+              <span class="check__item">
+                <svg class="check__icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I agreed with<a href="" class="check__link"
+                >Policy agreement</a
+              >
+            </label>
+          </div>
+          <button type="submit" class="form__btn">Buy</button>
+        </div>
+
 </section>

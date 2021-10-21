@@ -3,33 +3,39 @@
   background-image: linear-gradient(to bottom, #ffffff 6%, #fff5f6 6%);
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(to bottom, #ffffff 12%, #fff5f6 12%);
+    background-image: linear-gradient(to bottom, #ffffff 11%, #fff5f6 11%);
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(./../images/contacts/sectionbg2@1x-desktop.png),
-      linear-gradient(to bottom, #ffffff 14%, #fff5f6 14%);
+      linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%);
     background-repeat: no-repeat;
     background-position: 20% 22%, center;
     background-size: contain;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(./../images/contacts/sectionbg2@2x-desktop.png),
-        linear-gradient(to bottom, #ffffff 14%, #fff5f6 14%);
+        linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%);
     }
   }
 
   &__wrapper {
-    width: 70%;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 110px;
 
     @media screen and (min-width: 768px) {
-      width: 100%;
+      padding-left: 35px;
+      padding-right: 35px;
       padding-bottom: 165px;
     }
 
     @media screen and (min-width: 1280px) {
-      padding-bottom: 165px;
+      padding-left: 115px;
+      padding-right: 115px;
+      padding-bottom: 115px;
     }
   }
 
@@ -60,17 +66,11 @@
     border-radius: 24px;
 
     @media screen and (min-width: 768px) {
-      max-width: 220px;
-      margin-top: 20px;
       padding: 50px 30px;
     }
 
     @media screen and (min-width: 1280px) {
-      max-width: 330px;
-      padding-top: 50px;
-      padding-bottom: 62px;
-      padding-left: 43px;
-      padding-right: 43px;
+      padding: 50px 43px 62px 43px;
     }
   }
 
