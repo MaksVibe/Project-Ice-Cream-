@@ -59,8 +59,13 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
+    transition: var(--transform-clr);
 
     color: var(--text-color-primary);
+
+    &:hover {
+      color: var(--brand-color);
+    }
 
     &--acctive {
       font-family: DM Sans;
