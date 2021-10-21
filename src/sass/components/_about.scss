@@ -37,9 +37,7 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--brand-color-secondary);
-    @media screen and (min-width: 320px) {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 15px;
     @media screen and (min-width: 768px) {
       font-size: 26px;
       line-height: 1.17;
@@ -59,9 +57,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--brand-color);
-    @media screen and (min-width: 320px) {
-      margin-bottom: 26px;
-    }
+    margin-bottom: 26px;
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 1.15;
@@ -111,9 +107,7 @@
     font-size: 12px;
     line-height: 1.62;
     color: var(--text-color-thrd);
-    @media screen and (min-width: 320px) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.76;
@@ -124,9 +118,7 @@
     }
     &--light-color {
       color: var(--text-color-scnd);
-      @media screen and (min-width: 320px) {
-        margin-bottom: 20px;
-      }
+      margin-bottom: 20px;
       @media screen and (min-width: 768px) {
         margin-bottom: 62px;
       }
