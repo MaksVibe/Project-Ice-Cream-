@@ -69,14 +69,6 @@
   }
 }
 
-// .products__item::before {
-//   content: '';
-//   display: block;
-//   width: 76px;
-//   height: 40px;
-//   background-image: url(../images/products/product1@1x-mobile.png);
-// }
-
 .products__item {
   width: 100%;
   max-width: 480px;
@@ -232,15 +224,8 @@
   }
 }
 
-.products__img {
-  width: 250px;
-  transform: translate(-50%);
-  position: absolute;
-  top: -113px;
-  left: 50%;
-}
-
 .products__item--title {
+  position: relative;
   font-family: Titan One;
   font-size: 20px;
   line-height: 1.15;
@@ -254,18 +239,35 @@
 }
 
 .products__point {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.products__point--dot {
-  display: flex;
+  display: inline-block;
+  top: 45%;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  margin-right: 4px;
+
   background-color: var(--bg-color-primary);
+  &::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transform: translate(200%);
+    background-color: var(--bg-color-primary);
+  }
+  &::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transform: translate(-200%);
+    background-color: var(--bg-color-primary);
+  }
 }
 
 .products__text {
@@ -276,7 +278,7 @@
   line-height: 152%;
   letter-spacing: 0.04em;
 
-  margin-top: 30px;
+  margin-top: 66px;
 
   color: var(--bg-color-primary);
 
@@ -293,32 +295,10 @@
     }
   }
   @media screen and (min-width: 1280px) {
+    margin-top: 70px;
     font-size: 16px;
   }
 }
-
-// .products__text--decor {
-//   display: block;
-//   position: absolute;
-//   text-align: center;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 1.5;
-//   letter-spacing: 0.03em;
-
-//   top: 40%;
-//   height: 100%;
-
-//   color: #ffffff;
-//   background-color: var(--bg-color-second);
-
-//   padding: 10px 20px;
-
-//   transform: translatey(100%);
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
 
 .products__link {
   position: relative;
