@@ -82,7 +82,7 @@
       </li>
     </ul>
     <div class="contacts__box">
-      <button type="button" class="contacts__btn contacts__btn--dark">
+      <button type="button" class="contacts__btn contacts__btn--dark" data-modal-open>
         Our Locations
         <svg class="contacts__icon">
           <use href="./images/icons.svg#icon-arrow-white"></use>
@@ -95,6 +95,74 @@
           <use href="./images/icons.svg#icon-arrow"></use>
         </svg>
       </button>
+    </div>
+  </div>
+
+  <div class="backdrop-contacts is-hidden" data-modal>
+    <div class="modal-contacts">
+      <button type="button" class="modal-contacts__close" data-modal-close>
+        <svg class="modal-contacts__icon--close">
+          <use href="./images/icons.svg#icon-close-dark"></use>
+        </svg>
+      </button>
+      <p class="modal-contacts__title">Our Locations</p>
+
+      <ul class="city-list">
+        <li class="city-list__item">
+          <button type="button" class="city-list__select active" data-city="chicago">
+            Chicago
+          </button>
+        </li>
+        <li class="city-list__item">
+          <button type="button" class="city-list__select" data-city="los-angeles">
+            Los Angeles
+          </button>
+        </li>
+        <li class="city-list__item">
+          <button type="button" class="city-list__select" data-city="new-york">New York</button>
+        </li>
+      </ul>
+
+      <div class="city-wrapper">
+        <div class="city-wrapper__map show" style="width: 100%" data-city="chicago">
+          <iframe
+            width="100%"
+            height="230"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Chicago+(Chicago)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="http://www.gps.ie/">truck gps</a></iframe
+          >
+        </div>
+
+        <div class="city-wrapper__map" style="width: 100%" data-city="los-angeles">
+          <iframe
+            width="100%"
+            height="230"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Los%20Angeles+(Los%20Angeles)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="http://www.gps.ie/">truck gps</a></iframe
+          >
+        </div>
+
+        <div class="city-wrapper__map" style="width: 100%" data-city="new-york">
+          <iframe
+            width="100%"
+            height="230"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=New%20York+(New%20York)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="http://www.gps.ie/">sport gps</a></iframe
+          >
+        </div>
+      </div>
     </div>
   </div>
 </section>
