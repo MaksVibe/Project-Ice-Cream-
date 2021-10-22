@@ -98,6 +98,7 @@
   height: 32px;
   border-radius: 50%;
   background-color: var(--inverse-color);
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: var(--brand-color);
@@ -183,7 +184,7 @@
       max-width: 150px;
     }
     &::before {
-      content: "\00a9";
+      content: '\00a9';
     }
   }
 }
