@@ -239,7 +239,13 @@
   }
 
   &__icon-close {
+    width: 18px;
+    height: 18px;
     stroke: var(--mobile-menu-bg);
+    &:hover,
+    :focus {
+      stroke: var(--brand-color);
+    }
   }
 
   &__subtitle {
