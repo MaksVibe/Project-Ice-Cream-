@@ -19,26 +19,16 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(./../images/contacts/sectionbg2@1x-desktop.png),
-      linear-gradient(
-        to bottom,
-        var(--bg-color-primary) 13%,
-        var(--bg-color-prime) 13%
-      );
+      linear-gradient(to bottom, var(--bg-color-primary) 13%, var(--bg-color-prime) 13%);
     background-repeat: no-repeat;
     background-position: 20% 22%, center;
     background-size: contain;
     padding-left: 95px;
     padding-right: 95px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(./../images/contacts/sectionbg2@2x-desktop.png),
-        linear-gradient(
-          to bottom,
-          var(--bg-color-primary) 13%,
-          var(--bg-color-prime) 13%
-        );
+        linear-gradient(to bottom, var(--bg-color-primary) 13%, var(--bg-color-prime) 13%);
     }
   }
 
@@ -336,12 +326,13 @@
   @media screen and (min-width: 768px) {
     min-width: 550px;
     height: 450px;
-    padding: 40px 20px;
+    padding: 35px 20px;
   }
 
   @media screen and (min-width: 1280px) {
     min-width: 800px;
     height: 500px;
+    padding: 40px 20px;
   }
 
   &__close {
@@ -373,7 +364,7 @@
   &__title {
     margin-bottom: 10px;
 
-    font-family: "Titan One", sans-serif;
+    font-family: 'Titan One', sans-serif;
     font-size: 22px;
     line-height: calc(21 / 18);
     text-transform: uppercase;
@@ -445,10 +436,10 @@
 
     @media screen and (min-width: 768px) {
       padding: 8px 20px;
-      font-size: 16px;
+      font-size: 18px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
       padding: 10px 30px;
       font-size: 21px;
     }
