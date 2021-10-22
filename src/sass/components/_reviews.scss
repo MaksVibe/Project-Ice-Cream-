@@ -1,6 +1,7 @@
-.reviews__slider {
+.reviews {
   padding-bottom: 90px;
-
+}
+.reviews__slider {
   @media screen and (min-width: 768px) {
     padding-bottom: 125px;
   }
@@ -51,12 +52,16 @@
 
   color: #000000;
   padding: 0 18px;
-  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1 0px 1px,
+    transparent 1px 31px
+  );
   text-align: center;
   position: relative;
   z-index: 10;
   &::before {
-    content: '';
+    content: "";
     background-image: url(../images/customer-reviews/brackets@1x.png);
     width: 54px;
     height: 40px;
@@ -106,7 +111,7 @@
 
 .reviews__mark {
   display: block;
-  content: '';
+  content: "";
   height: 4px;
   width: 4px;
   background: #c7133e;
@@ -138,7 +143,7 @@
   line-height: 24px;
 }
 .slick-dots li.slick-active button:before {
-  content: '';
+  content: "";
   background-image: url(../images/customer-reviews/house.svg);
   fill: #d31342;
   background-repeat: no-repeat;

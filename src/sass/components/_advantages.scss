@@ -1,12 +1,11 @@
 .advantages {
   background-color: var(--bg-color-prime);
+  padding-bottom: 100px;
 }
 
 .advantages__container {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 100px;
   @media screen and (max-width: 767px) {
     max-width: 100%;
   }
@@ -30,7 +29,7 @@
   &:not(:last-child) {
     margin-bottom: 38px;
     @media screen and (min-width: 768px) {
-  margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
   @media screen and (min-width: 768px) {
@@ -40,7 +39,6 @@
     max-width: 330px;
   }
 
-
   &::before {
     display: block;
     content: "";
@@ -49,11 +47,11 @@
     height: 50px;
     margin-bottom: 16px;
     @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
+      margin-bottom: 36px;
     }
     @media screen and (min-width: 1280px) {
       margin-bottom: 40px;
-      }
+    }
   }
   &:nth-child(1) {
     &::before {
